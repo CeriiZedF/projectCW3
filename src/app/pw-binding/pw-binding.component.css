@@ -1,0 +1,20 @@
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.underline{
+    text-decoration: underline;
+}
+

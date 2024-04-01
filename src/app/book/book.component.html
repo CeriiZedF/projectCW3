@@ -1,0 +1,21 @@
+<section>
+    
+    <div class="container">
+        <ul>
+            <h1 ngClass="headerBook">Books</h1>
+            <li *ngFor="let book of books" 
+                (click)= "onSelect(book)">
+                Title: {{book.title}}<br>Year: {{book.year}}
+            </li>
+        </ul>
+    </div>
+    <div class="container_selected">
+        <img ngClass="imageSelected" [src]="selectedBook.src" alt="Not Found Image">
+        <div class="container_selected">
+        <br>
+        <h1>Title: {{selectedBook.title}}</h1>
+        <br>
+        <h2>Year: {{selectedBook.year}}</h2>
+    </div>
+    </div>
+</section>

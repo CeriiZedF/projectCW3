@@ -1,0 +1,42 @@
+<div class="container">
+    <!-- <hr>
+    <button (click)="showAlert($event)">Click</button>
+    <hr>
+    <button *ngIf="isVisible" (click)="toggle()">Hide</button>
+    <button *ngIf="!isVisible" (click)="toggle()">Show</button>
+    <p *ngIf="isVisible">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Qui unde eius laborum! Fugiat dolore maiores, excepturi est eum nam. 
+      Quas ipsum distinctio tenetur enim! Ratione at perspiciatis, eum ea 
+      dolorem incidunt mollitia ipsam quo dolore quae iste itaque atque saepe debitis eaque,
+      in eos, sapiente magni repellat ullam! Earum, officia.
+    </p> -->
+
+
+    <button (click)="changeBold()" [ngClass]="{bold: isBold}">B</button>
+    <button (click)="changeItalic()" [ngClass]="{italic: isItalic}">I</button>
+    <button (click)="changeCursive()" [ngClass]="{cursive: isCursive}">C</button>
+    <button (click)="changeUnderline()" [ngClass]="{underline: isUnderline}">U</button>
+    <button (click)="changeTr()" [ngClass]="{upper: isTr}">Tr</button>
+    <select [(ngModel)]="fontSize">
+        <option value="12">12</option>
+        <option value="16">16</option>
+        <option value="24">24</option>
+        <option value="32">32</option>
+    </select>
+    <select [(ngModel)]="fontFamily">
+        <option value="monospace">Monospace</option>
+        <option value="serif">Serif</option>
+        <option value="fantasy" selected>Fantasy</option>
+        <option value="system-ui">System-ui</option>
+    </select>
+    <input type="color" [(ngModel)]="colors">
+    <br>
+    <textarea [ngClass]="{bold: isBold, italic: isItalic, cursive: isCursive, upper: isTr, underline: isUnderline}" 
+    [ngStyle]="{'font-size': fontSize+'px', 'color': colors, 'font-family': fontFamily}"
+    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Qui unde eius laborum! Fugiat dolore maiores, excepturi est eum nam. 
+        Quas ipsum distinctio tenetur enim! Ratione at perspiciatis, eum ea 
+        dolorem incidunt mollitia ipsam quo dolore quae iste itaque atque saepe debitis eaque,
+        in eos, sapiente magni repellat ullam! Earum, officia.</textarea>
+</div>

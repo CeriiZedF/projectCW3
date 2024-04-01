@@ -4,6 +4,9 @@
 
 #Book Selector is list
 
+![Screenshot 2024-04-01 201921](https://github.com/CeriiZedF/projectCW3/assets/60105990/99264bf9-6136-4449-9122-39bf7c5bf2ce)
+![Screenshot 2024-04-01 201932](https://github.com/CeriiZedF/projectCW3/assets/60105990/121c2717-4dfa-4b10-8721-fa8107c2a41d)
+
 
 
 # ProjectCW3
